@@ -26,7 +26,8 @@
             <button class="navbar-toggler toogler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span> 
+                <i class="fas fa-bars"></i>
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
@@ -59,7 +60,7 @@
 
     <header id="inicio" class="hero-section">
         <div class="container">
-            <h1>Web Developer</h1>
+            <h1>Full Stack Developer</h1>
             <div class="background-image"></div>
             <div class="row texto-header">
                 <div class="col-sm-12">
@@ -74,9 +75,11 @@
                     <div class="card mb-3 " style="width: 100%; background-color: #1c1c1ce2;">
                       <div class="row g-0">
                         <div class="col-md-4">
-                          <img src="./assets/images/yo.jpg" class="img-fluid rounded-start" alt="Imagen Bianca">
-                        </div>
-                        <div class="col-md-8">
+                            <img class="imgModal img-fluid rounded-circle pb-2 img-custom-height"
+                            src="./assets/images/yo.jpg" class="img-fluid rounded-start" alt="Imagen perfil">
+                            </div>
+                         
+                            <div class="col-md-8">
                           <div class="card-body cont1 custom-background">
                             <h3 class="card-sobre font-weight-bold my-4">Sobre mi</h3>
                             <p class="card-text text-white">Nací en Venezuela el 12 de Diciembre de 1983, soy madre y esposa. Desde niña me interesó la computación y gracias al apoyo de mi esposo pude entrar al mundo del desarrollo. <br> Aunque siempre me gustó y tenía habilidades, no me atreví a estudiar algo relacionado con esta área en un inicio.<br> <br>Luego de salir de la universidad, siendo técnico universitario en enfermería, al año emigré a Chile, lo cual me abrió sus puertas.<br> Una vez establecida, trabajé en empresas de enfermería con servicios a domicilio. Tiempo después llegó la pandemia y quedé sin empleo. Fue entonces cuando sentí que era la oportunidad de estudiar lo que realmente me gustaba, así que empecé de forma autodidacta a estudiar desarrollo web. <br> <br>Luego tuve la oportunidad de obtener una beca con Talento Digital y pude estudiar en la Academia Desafío Latam un bootcamp de desarrollo Full Stack en JavaScript, donde adquirí y reforzé nuevos conocimientos realizando proyectos. Hoy en día me siento capacitada para enfrentarme al mundo laboral. Todos tenemos un inicio y me creo capaz de manejar nuevos retos.</p>
@@ -84,213 +87,172 @@
                       </div>
                     </div>
                   </div> 
+                  </div> 
+                  </div> 
                   
-
-
 <!-- cards -->
-                <section class="sectioncard mt-5 p-5 mb-5">
-                    <h3 class="text-center font-weight-bold pt-4">Mis proyectos</h3>
-                    <div class="section3_container container d-flex flex-wrap pb-4">
-                        <div class="card scrollflow -pop -opacity cardprincipal">
-                            <img src="./assets/images/suricato.png" class="card-img-top" alt="Imagen Suricato">
-                            <div class="card-body ">
-                                <h4 class="card-title">Web Suricato</h4>
-                                <p class="card-text">Página de Productos</p>
-                            
-                            <div class="container_badges container text-center">
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Html</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Bootstrap</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Css</span>
-                            </div>
+<section id="myProjects" class="section3 p-5 mb-5">
+    <h3 class="text-center font-weight-bold pt-4">Mis proyectos</h3>
+    <div class="section3_container container d-flex flex-wrap pb-4">
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/suricato.png" class="card-img-top" alt="Imagen Suricato">
+            <div class="card-body">
+                <h5 class="card-title">Web Suricato</h5>
+                <p class="card-text">Página de Productos</p>
+            </div>
+            <div class="container_badges container text-center">
+                <span class="badge badge-dark badge-no-background">Bootstrap</span>
+                <span class="badge badge-dark badge-no-background">Css</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://biancadmsa.github.io/Desafio_Web_Pag_Suricato/" target="_blank" class="btn btn-outline-dark card-body_btn">Ver página</a>
+                <a href="https://github.com/Biancadmsa/Desafio_Web_Pag_Suricato" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
 
-                            <div class="card-body card-body_buttons">
-                                <a href="https://biancadmsa.github.io/Desafio_Web_Pag_Suricato/" target="_blank"
-                                    class="btn btn-outline-dark dark bg-dark text-light card-body_btn">Ver
-                                    página</a>
-                                <a href="https://github.com/Biancadmsa/Desafio_Web_Pag_Suricato" target="_blank"
-                                    class="btn btn-outline-dark dark bg-dark text-light card-body_btn">Repositorio</a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/superhero.png" class="card-img-top" alt="Imagen Superhero">
+            <div class="card-body">
+                <h5 class="card-title">Super Hero</h5>
+                <p class="card-text">Página de búsqueda de Héroes.</p>
+            </div>
+            <div class="container_badges container text-center">
+                <span class="badge badge-dark badge-no-background">Javascript</span>
+                <span class="badge badge-dark badge-no-background">API</span>
+                <span class="badge badge-dark badge-no-background">JQuery</span>
+                <span class="badge badge-dark badge-no-background">CSS3</span>
+                <span class="badge badge-dark badge-no-background">Bootstrap</span>
+                <span class="badge badge-dark badge-no-background">HTML</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://biancadmsa.github.io/SuperHero/" target="_blank" class="btn btn-outline-dark card-body_btn">Ver página</a>
+                <a href="https://github.com/Biancadmsa/SuperHero" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
 
-                        <div class="card scrollflow -pop -opacity cardprincipal">
-                            <img src="./assets/images/superhero.png" class="card-img-top" alt="Imagen Superhero">
-                            <div class="card-body">
-                                <h4 class="card-title">Super Hero</h4>
-                                <p class="card-text">Página de búsqueda de Héroes.</p>
-                           
-                            <div class="container_badges container text-center">
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Javascript</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">API</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">JQuery</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">CSS3</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Bootstrap</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">HTML</span>
-                            </div>
-                        </div>
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/ricomida.png" class="card-img-top" alt="Imagen Ricomida">
+            <div class="card-body">
+                <h5 class="card-title">Ricomida</h5>
+                <p class="card-text">Sitio de recetas de cocina Ricomida</p>
+            </div>
+            <div class="container_badges container text-center">
+                <span class="badge badge-dark badge-no-background">JQuery</span>
+                <span class="badge badge-dark badge-no-background">Bootstrap</span>
+                <span class="badge badge-dark badge-no-background">CSS3</span>
+                <span class="badge badge-dark badge-no-background">Html5</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://biancadmsa.github.io/Desafio_Ricomida/" target="_blank" class="btn btn-outline-dark card-body_btn">Ver página</a>
+                <a href="https://github.com/Biancadmsa/Desafio_Ricomida" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
 
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/cuppon.png" class="card-img-top" alt="Imagen cuppon">
+            <div class="card-body">
+                <h5 class="card-title">Cuppon</h5>
+                <p class="card-text">Página donde obtienes cupones con descuentos.</p>
+            </div>
+            <div class="container_badges container text-center">
+                <span class="badge badge-dark badge-no-background">Bootstrap</span>
+                <span class="badge badge-dark badge-no-background">CSS3</span>
+                <span class="badge badge-dark badge-no-background">Html</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://biancadmsa.github.io/Desafio_Cuppon/" target="_blank" class="btn btn-outline-dark card-body_btn">Ver página</a>
+                <a href="https://github.com/Biancadmsa/Desafio_Cuppon" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
 
-                            <div class="card-body card-body_buttons">
-                                <a href="https://biancadmsa.github.io/SuperHero/" target="_blank"
-                                    class="btn btn-outline-dark dark bg-dark text-light card-body_btn">Ver
-                                    página</a>
-                                <a href="https://github.com/Biancadmsa/SuperHero" target="_blank"
-                                    class="btn btn-outline-dark dark bg-dark text-light card-body_btn">Repositorio</a>
-                            </div>
-                        </div>
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/like_me.png" class="card-img-top" alt="Red Social Like Me">
+            <div class="card-body">
+                <h5 class="card-title">Red Social Like Me</h5>
+                <p class="card-text">Pagina para subir imagenes y dar like dislike.</p>
+            </div>
+            <div class="container_badges container text-center">
+                <span class="badge badge-dark badge-no-background">axios</span>
+                <span class="badge badge-dark badge-no-background">Javascript</span>
+                <span class="badge badge-dark badge-no-background">Node.js</span>
+                <span class="badge badge-dark badge-no-background">Boostrap</span>
+                <span class="badge badge-dark badge-no-background">CSS</span>
+                <span class="badge badge-dark badge-no-background">Html</span>
+                <span class="badge badge-dark badge-no-background">Postgres</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://github.com/Biancadmsa/Red_Social_Like_Me" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
 
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/repertorio.png" class="card-img-top" alt="Imagen Treek-In">
+            <div class="card-body">
+                <h5 class="card-title">Repertorio Musical</h5>
+                <p class="card-text">Sitio web dedicado a personas amantes del trekking.</p>
+            </div>
+            <div class="container_badges container text-center">
+                <span class="badge badge-dark badge-no-background">Html</span>
+                <span class="badge badge-dark badge-no-background">Bostrap</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://github.com/Biancadmsa/Mi_Repertorio" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
 
-                        <div class="card scrollflow -pop -opacity cardprincipal mb-5">
-                            <img src="./assets/images/ricomida.png" class="card-img-top" alt="Imagen Ricomida">
-                            <div class="card-body">
-                                <h4 class="card-title">Ricomida</h4>
-                                <p class="card-text">Sitio de recetas de cocina Ricomida</p>
-                            
-                            <div class="container_badges container text-center">
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">JQuery</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Bootstrap</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">CSS3</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Html5</span>
-                            </div>
-                        </div>
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/skatepark.png" class="card-img-top" alt="Skate Park">
+            <div class="card-body">
+                <h5 class="card-title">Registros Skate Park</h5>
+                <p class="card-text">Página web de descuentos.</p>
+            </div>
+            <div class="container_badges container text-center">
+                <span class="badge badge-dark badge-no-background">Bootstrap</span>
+                <span class="badge badge-dark badge-no-background">CSS</span>
+                <span class="badge badge-dark badge-no-background">Html</span>
+                <span class="badge badge-dark badge-no-background">Node.js</span>
+                <span class="badge badge-dark badge-no-background">Postgres</span>
+                <span class="badge badge-dark badge-no-background">Javascript</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://github.com/Biancadmsa/Skate_Park" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
 
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/collage_imagenes.png" class="card-img-top" alt="Collage de Imagenes">
+            <div class="card-body">
+                <h5 class="card-title">Collage de Imagenes</h5>
+                <p class="card-text">Sitio de comida estilo delivery.</p>
+            </div>
+            <div class="container_badges container text-center skills">
+                <span class="badge badge-dark badge-no-background">Bootstrap</span>
+                <span class="badge badge-dark badge-no-background">CSS3</span>
+                <span class="badge badge-dark badge-no-background">Html</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://github.com/Biancadmsa/Collage_de_Imagenes" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
 
-                            <div class="card-body card-body_buttons">
-                                <a href="https://biancadmsa.github.io/Desafio_Ricomida/" target="_blank"
-                                    class="btn btn-outline-dark dark bg-dark text-light card-body_btn">Ver
-                                    página</a>
-                                <a href="https://github.com/Biancadmsa/Desafio_Ricomida" target="_blank"
-                                    class="btn btn-outline-dark dark bg-dark text-light card-body_btn">Repositorio</a>
-                            </div>
-                        </div>
+        <div class="card scrollflow -pop -opacity">
+            <img src="./assets/images/instagram.png" class="card-img-top" alt="Post Instagram">
+            <div class="card-body px-3">
+                <h5 class="card-title text-center">Post Instagram</h5>
+                <p class="card-text">Página de eventos donde se organizan charlas sobre tecnología.</p>
+            </div>
+            <div class="container_badges container text-center">
+                <span class="badge badge-dark badge-no-background">CSS3</span>
+                <span class="badge badge-dark badge-no-background">Html5</span>
+            </div>
+            <div class="card-body card-body_buttons">
+                <a href="https://biancadmsa.github.io/BiancaFeed_Instagram_Bootstrap/" target="_blank" class="btn btn-outline-dark card-body_btn">Ver página</a>
+                <a href="https://github.com/Biancadmsa/BiancaFeed_Instagram_Bootstrap" target="_blank" class="btn btn-outline-dark card-body_btn">Repositorio</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-                        <div class="card scrollflow -pop -opacity cardprincipal">
-                            <img src="./assets/images/cuppon.png" class="card-img-top" alt="Imagen cuppon">
-                            <div class="card-body">
-                                <h4 class="card-title">Cuppon</h4>
-                                <p class="card-text">Página donde obtienes cupones con descuentos.
-                                </p>
-                            
-                            <div class="container_badges container text-center">
-                                
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Bootstrap</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">CSS3</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Html</span>
-                            </div>
-                        </div>
-                            <div class="card-body card-body_buttons">
-                                <a href="https://biancadmsa.github.io/Desafio_Cuppon/" target="_blank"
-                                    class="btn btn-outline-dark dark bg-dark text-light card-body_btn">Ver
-                                    página</a>
-                                <a href="https://github.com/Biancadmsa/Desafio_Cuppon" target="_blank"
-                                    class="btn btn-outline-dark dark bg-dark text-light card-body_btn">Repositorio</a>
-                            </div>
-                        </div>
-
-                        <div class="card scrollflow -pop -opacity cardprincipal">
-                            <img src="./assets/images/like_me.png" class="card-img-top" alt="Red Social Like Me">
-                            <div class="card-body">
-                                <h4 class="card-title">Red Social Like Me</h4>
-                                <p class="card-text">Prototipo de revista online.</p>
-                           
-                            <div class="container_badges container text-center">
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">axios</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Javascript</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Node.js</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Boostrap</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">CSS</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Html</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Postgres</span>
-                            </div>
-                        </div>
-
-                            <div class="card-body card-body_buttons">
-                                <a href="https://github.com/Biancadmsa/Red_Social_Like_Me" target="_blank"
-                                    class="btn btn-outline-dark bg-dark text-light card-body_btn">Repositorio</a>
-                            </div>
-                        </div>
-
-                        <div class="card scrollflow -pop -opacity cardprincipal">
-                            <img src="./assets/images/repertorio.png" class="card-img-top" alt="Imagen Treek-In">
-                            <div class="card-body">
-                                <h4 class="card-title">Repertorio Musical</h4>
-                                <p class="card-text">Sitio web dedicado a personas amantes del trekking.</p>
-                           
-                            <div class="container_badges container text-center">
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Html</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Bostrap</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad"></span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad"></span>
-                            </div>
-                            <div class="card-body card-body_buttons">
-                                <a href="https://github.com/Biancadmsa/Mi_Repertorio" target="_blank"
-                                    class="btn btn-outline-dark bg-dark text-light card-body_btn">Repositorio</a>
-                            </div>
-                        </div>
-                    </div>
-
-                        <div class="card scrollflow -pop -opacity cardprincipal">
-                            <img src="./assets/images/skatepark.png" class="card-img-top" alt="Skate Park">
-                            <div class="card-body">
-                                <h4 class="card-title"> Registros Skate Park</h4>
-                                <p class="card-text">Página web de descuentos.</p>
-                           
-                            <div class="container_badges container text-center">
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Bootstrap</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">CSS</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Html</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Node.js</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Postgres</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Javascript</span>
-                            </div>
-                        </div>
-                            <div class="card-body card-body_buttons">
-                                <a href="https://github.com/Biancadmsa/Skate_Park" target="_blank"
-                                    class="btn btn-outline-dark bg-dark text-light card-body_btn">Repositorio</a>
-                            </div>
-                        </div>
-
-                        <div class="card scrollflow -pop -opacity cardprincipal">
-                            <img src="./assets/images/collage_imagenes.png" class="card-img-top" alt="Collag de Imagenes">
-                            <div class="card-body">
-                                <h4 class="card-title">Collage de Imagenes</h4>
-                                <p class="card-text">Sitio de comida estilo delivery.</p>
-                           
-                            <div class="container_badges container text-center">
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Bootstrap</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">CSS3</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Html</span>
-                            </div>
-                        </div>
-
-                            <div class="card-body card-body_buttons">
-                                <a href="https://github.com/Biancadmsa/Collage_de_Imagenes" target="_blank"
-                                    class="btn btn-outline-dark bg-dark text-light card-body_btn">Repositorio</a>
-                            </div>
-                        </div>
-
-                        <div class="card scrollflow -pop -opacity cardprincipal">
-                            <img src="./assets/images/instagram.png" class="card-img-top" alt="Post Instagram">
-                            <div class="card-body px-3">
-                                <h4 class="card-title text-center">Post Instagram</h4>
-                                <p class="card-text">Página de eventos donde se organizan charlas sobre tecnología.</p>
-                          
-                            <div class="container_badges container text-center">
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">CSS3</span>
-                                <span class="badge badge-white text-dark border border-dark rounded-ovalad">Html5</span>
-                            </div>
-                        </div>
-                        
-                            <div class="card-body card-body_buttons">
-                                <a href="https://biancadmsa.github.io/BiancaFeed_Instagram_Bootstrap/" target="_blank"
-                                    class="btn btn-outline-dark bg-dark text-light card-body_btn">Ver
-                                    página</a>
-                                <a href="https://github.com/Biancadmsa/BiancaFeed_Instagram_Bootstrap" target="_blank"
-                                    class="btn btn-outline-dark bg-dark text-light card-body_btn ">Repositorio</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
 
 <!-- juego -->
@@ -315,33 +277,33 @@
 
 
 <!--Íconos con redes sociales-->
-                <footer class="text-center py-5 text-light">
+                <footer class="text-center py-3 text-light">
                     <div class="container-fluid">
                         <div class="row justify-content-center">
-                            <div class="col-1">
-                                <a class="d-block text-light text-center" href="mailto:biancadmsadf16@gmail.com">
+                            <div class="col-2 col-md-1 px-0">
+                                <a class="d-block text-light text-center ms-0" href="mailto:biancadmsadf16@gmail.com">
                                     <i class="fas fa-envelope fa-1x" data-toggle="tooltip" data-placement="top" title="Link a mi correo"></i>
                                 </a>
                             </div>
-                            <div class="col-1">
-                                <a class="d-block text-light text-center" href="https://wa.me/56983116845" target="_blank">
+                            <div class="col-2 col-md-1 px-0">
+                                <a class="d-block text-light text-center ms-0" href="https://wa.me/56983116845" target="_blank">
                                     <i class="fab fa-whatsapp fa-1x" data-toggle="tooltip" data-placement="top" title="Link a mi WhatsApp"></i>
                                 </a>
                             </div>
-                            <div class="col-1">
-                                <a class="d-block text-light text-center" href="https://www.linkedin.com/in/biancasalcedodev/" target="_blank">
+                            <div class="col-2 col-md-1 px-0">
+                                <a class="d-block text-light text-center ms-0" href="https://www.linkedin.com/in/biancasalcedodev/" target="_blank">
                                     <i class="fab fa-linkedin-in fa-1x" data-toggle="tooltip" data-placement="top" title="Visita mi perfil en LinkedIn"></i>
                                 </a>
                             </div>
-                            <div class="col-1">
-                                <a class="d-block text-light text-center" href="https://github.com/Biancadmsa" target="_blank">
+                            <div class="col-2 col-md-1 px-0">
+                                <a class="d-block text-light text-center ms-0" href="https://github.com/Biancadmsa" target="_blank">
                                     <i class="fab fa-github fa-1x" data-toggle="tooltip" data-placement="top" title="Visita mi perfil en Github"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <h6 class="pt-2 m-3 mt-4 text-light">© Bianca Salcedo | Full Stack Developer</h6>
+                                <h6 class="m-md-3 text-light">© Bianca Salcedo | Full Stack Developer</h6>
                             </div>
                         </div>
                     </div>

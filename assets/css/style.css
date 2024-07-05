@@ -10,8 +10,30 @@ body {
 .navbar {
   background-color: rgb(15, 22, 40);
   opacity: 0.7;
-
 }
+
+
+.nav-link{
+  color: rgb(248, 229, 229)!important;
+  text-decoration: none;
+  padding: 0 20px!important;
+} 
+
+@media screen and (min-width: 576px) {
+  .nav-link {
+      border-right: 1px solid rgb(248, 229, 229);
+  }
+}
+/*Ícono hamburguesa*/
+
+.img-custom-height {
+  height: 200px; /* Ajusta este valor según tus necesidades */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+}
+
+
+
 
 .text-logo {
   font-size: 30px;
@@ -61,18 +83,21 @@ h1 {
   padding-bottom: 0;
 }
 
+@media (min-width: 992px) {
+  h1 {
+    text-align: start;
+    padding: 8em 0em 0em 0em;
+  }
+}
 
 
-/*contenido-quien soy-*/
-/* 
-
-.titulo-presentacion {
-  color: #ffffff;
-  text-align: center;
-  font-size: 55px;
-  font-weight: 700;
-  font-style: normal;
-} */
+.img-custom-height {
+  opacity:0.8;
+  margin: 52px 50px;
+  height: 400px; /* Ajusta este valor según tus necesidades */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+  width: 80%; /* Asegura que la imagen ocupe todo el ancho disponible */
+}
 
 
 h3 {
@@ -91,11 +116,13 @@ h4{
   color: #000;
  }
 
+@media (min-width: 768px) {
+  h6 {
+    font-size: 25px;
+    color: #ffffff;
+  }
+} 
 
-h6 {
-  font-size: 25px;
-  color: #ffffff;
-}
 /* 
 card-title */
 
@@ -131,9 +158,14 @@ footer {
 
 /* Íconos redes sociales */
 footer a {
-  margin-left: 15px;
-  font-size: 45px;
+  font-size: 2em;
   color: rgb(248, 229, 229);
+}
+
+@media (min-width: 768px) {
+  footer a {
+    font-size: 45px;
+  }
 }
 
 footer a:hover {
@@ -144,77 +176,74 @@ footer a:hover {
 /* proyectos */
 
 
-/* seccion 3 (Proyectos) */
+    /* seccion 3 (Proyectos) */
 
-.sectioncard {
-  background: rgba(16, 16, 16, 0.6);
+  .section3 {
+      background: rgba(0, 0, 0, 0.6)
+  } 
 
+  .card{
+      margin: 40px auto;
+      box-sizing: border-box;
+      border-radius: 10px;
+      height: 500px; /
+  }
+
+  .card-title {
+      font-weight:700;
+      color: black!important;
+      text-align: center;
+  }
+
+  .card-body {
+      text-align: justify;
+  }
+
+  .card-body_buttons {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .card-body_btn {
+      border-radius: 0px;
+      background: #2e2c2c;
+      color:#f2ecec;
+  }
+
+  .list-group-item, .card-text {
+      color: #000000;
+  }
+
+  .badge-no-background {
+    background-color: transparent !important;
+    color: black !important; /* Asegúrate de que el texto siga siendo visible */
+    border: 1px solid black; /* Añade un borde negro */
+    border-radius: 5px; /* Ajusta el radio del borde según tus necesidades */
+    padding: 0.2em 0.5em; /* Añade un poco de padding para mejorar la apariencia */
+}
+
+
+p .card-text{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
 }
 /* 
-#myProjects {
-  border: 2px solid white;
-  padding: 30px;
-  box-shadow: 0px 0px 10px rgba(85, 17, 17, 0.5), 0px 0px 50px rgba(4, 6, 74, 0.5);
-
-} */
-
-
-.card {
-  margin: 40px auto;
-  box-sizing: border-box;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  
-}
-
-
-.cardprincipal {
-  height: 500px;
-}
-
-
-.card-body {
-  max-height: auto;
-  background-color: #ebe3e3;
-  
-}
-
-.card-title {
-  font-weight: 700;
-  color: rgb(15, 22, 40)!important;
-  text-align: center;
-  font-size: 25px;
-}
-
-.card-sobre {
-  font-weight: 700;
-  color: rgb(255, 255, 255)!important;
-  text-align: center;
-  font-size: 45px;
-}
-
-
-.custom-background {
-  background-color:  rgba(28, 27, 27, 0.5);/* Cambia esto por el color de fondo que prefieras */
-  padding: 20px; /* Opcional: agrega padding para un mejor espaciado */
-  border-radius: 10px; /* Opcional: agrega bordes redondeados */
-}
-
-.card-body {
-  text-align: justify;
-  border-radius: 10px;
-}
 
 .card-body_buttons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
+  
+} */
+/* 
 .card-body_btn {
   border-radius: 10px;
-}
+} */
 
 .list-group-item,
 .card-text {
@@ -312,70 +341,66 @@ padding-bottom: 20px;
 
 /*Media queries*/
 
+
+
+
+
+/* chat */
+
+/* Responsive styles for cards */
+
+/* General styles */
+.card {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
-  h1 {
-    text-align: start;
-    padding: 8em 0em 0em 0em;
-  }
-
-  nav {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
-
-  .start_section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  section {
-    border-radius: 0.25em;
-  }
-
-  .section2 {
-    width: 70vw;
-    margin: auto;
-  }
-
-  .btnSaberMas {
-    width: 30vw;
-  }
-
-  .section3_container {
-    padding: 3em 0 !important;
-  }
-
   .card {
-    padding: 0;
-    width: 40%;
-  }
-
-  .card-text,
-  .container_badges {
-    padding: 0 1.5em;
-  }
-
-  footer a {
-    margin-left: 25px;
-    font-size: 40px;
-    color: rgb(248, 229, 229);
-  }
-
-
-
-  .lastLink {
-    border-right: 0;
+    width: 48%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .section2 {
-    padding: 1em 6em !important;
-  }
-
+@media (min-width: 768px) {
   .card {
     width: 30%;
   }
+}
 
-  
+@media (min-width: 992px) {
+  .card {
+    width: 30%;
+  }
+}
+span{
+  margin-top: 20px;;
+}
+.card-body_buttons {
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 15px;
+}
+.text-center{
+  margin-top: 10px;;
+}
+.card-body_buttons .btn {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .card-body_buttons {
+    flex-direction: row;
+  }
+}
+
+ .btn-custom {
+  flex: 1 1 auto;
+  min-width: 150px; /* Ajusta el tamaño mínimo según tus necesidades */
+}
+.card-body_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.card-body_buttons .btn {
+  flex: 1;
+  margin: 0 5px;
 }
