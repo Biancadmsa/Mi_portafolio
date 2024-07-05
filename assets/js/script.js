@@ -67,3 +67,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 30000);
     });
 });
+
+// AboutMi$(document).ready(function() {
+        function adjustElements() {
+            if ($(window).width() < 768) {
+                $('#aboutMe .paragraph').css('font-size', '16px');
+                $('#aboutMe img').css({
+                    'width': '100%',
+                    'height': 'auto'
+                });
+            } else {
+                $('#aboutMe .paragraph').css('font-size', '19px');
+                $('#aboutMe img').css({
+                    'width': 'auto',
+                    'height': 'auto'
+                });
+            }
+        }
+
+        adjustElements();
+
+        $(window).resize(function() {
+            adjustElements();
+        });
+    

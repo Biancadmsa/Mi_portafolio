@@ -2,56 +2,40 @@ body {
   margin: 0;
   border: 0;
   padding: 0;
-  background: #050505;
+  background: #100f0f;
   font-family: 'Roboto', sans-serif !important;
 }
 
-
 .navbar {
   background-color: rgb(15, 22, 40);
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
-
-.nav-link{
-  color: rgb(248, 229, 229)!important;
+.nav-link {
+  color: rgb(248, 229, 229) !important;
   text-decoration: none;
-  padding: 0 20px!important;
-} 
-
-@media screen and (min-width: 576px) {
-  .nav-link {
-      border-right: 1px solid rgb(248, 229, 229);
-  }
-}
-/*Ícono hamburguesa*/
-
-.img-custom-height {
-  height: 200px; /* Ajusta este valor según tus necesidades */
-  object-fit: cover; /* Asegura que la imagen mantenga su proporción */
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+  padding: 0 20px !important;
 }
 
-
-
+#navbarNav .nav-link {
+  font-weight: bold;
+}
 
 .text-logo {
   font-size: 30px;
 }
 
 .container-fluid {
-  padding-left: 50px;  /* Ajusta este valor según sea necesario */
-  padding-right: 50px; /* Ajusta este valor según sea necesario */
+  padding-left: 50px;
+  padding-right: 50px;
 }
-
-
 
 /*header*/
 .hero-section {
   background-size: cover;
-  background-image: url("../images/header3.jpg"); /* Ruta relativa correcta */
+  background-image: url("../images/header3.jpg");
   background-repeat: no-repeat;
-  height: 100vh; /* Ajusta la altura según tu preferencia */
+  height: 100vh;
   background-position: center;
   position: relative;
 }
@@ -62,14 +46,8 @@ body {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .texto-header {
-    margin-top: 3rem;
-  }
-}
-
-.welcomeText {
-  padding-top: 0;
+h2{
+  margin-top: 10px;
 }
 
 h1 {
@@ -79,57 +57,64 @@ h1 {
   font-style: normal;
   font-size: 60px;
   text-shadow: 2px 2px 0px rgb(18, 76, 76), -2px -2px 0px aqua, 2px -2px 0px aqua, -2px 2px 0px aqua;
-  padding-top:460px;
-  padding-bottom: 0;
+  margin-top: 50px;
+
+ 
 }
 
-@media (min-width: 992px) {
-  h1 {
-    text-align: start;
-    padding: 8em 0em 0em 0em;
-  }
+/* section 1 (Sobre mi) */
+#aboutMe {
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden; /* Asegura que el pseudo-elemento no sobresalga del contenedor */
+  
 }
 
-
-.img-custom-height {
-  opacity:0.8;
-  margin: 52px 50px;
-  height: 400px; /* Ajusta este valor según tus necesidades */
-  object-fit: cover; /* Asegura que la imagen mantenga su proporción */
-  width: 80%; /* Asegura que la imagen ocupe todo el ancho disponible */
+#aboutMe * {
+  position: relative;
+  z-index: 2;
 }
 
+.section1 {
+  width: 65vw;
+  background-color: #161718;
+  margin: auto;
+  /* padding-bottom: 20px; */
+  color: #d9cbcb;
+  border: 1px solid #d5cccc;
+  height: 530px;
+}
+
+.image-container {
+  margin-top: -20px;
+}
+
+.paragraph {
+  height: 650px; /* Ajusta la altura según sea necesario */
+  overflow-y: scroll;
+  color:rgb(244, 237, 237);
+  font-size:15px !important;
+}
 
 h3 {
   color: #d5cccc;
   text-align: center;
   font-size: 45px;
-
 }
 
-h4{
-  color:black;
+h4 {
+  color: black;
 }
 
- h5{
+h5 {
   margin-top: 5px;
   color: #000;
- }
-
-@media (min-width: 768px) {
-  h6 {
-    font-size: 25px;
-    color: #ffffff;
-  }
-} 
-
-/* 
-card-title */
+}
 
 ul.navbar-nav li.nav-item a.nav-link {
   font-weight: 300;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   position: relative;
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -139,14 +124,12 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   box-shadow: 0px 35px 35px rgba(2, 2, 66, 0.6);
 }
 
-
 .columna1,
 .columna2 {
   margin-top: 30px;
   text-align: justify;
   font-size: 20px;
 }
-
 
 /* footer */
 footer {
@@ -162,69 +145,98 @@ footer a {
   color: rgb(248, 229, 229);
 }
 
-@media (min-width: 768px) {
-  footer a {
-    font-size: 45px;
-  }
-}
-
 footer a:hover {
   color: rgb(176, 243, 221);
 }
 
-
 /* proyectos */
+.section3 {
+  background: rgba(0, 0, 0, 0.6);
+}
 
+.card {
+  margin: 40px auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 500px;
+}
 
-    /* seccion 3 (Proyectos) */
+.card-title {
+  font-weight: 700;
+  color: black !important;
+  text-align: center;
+}
 
-  .section3 {
-      background: rgba(0, 0, 0, 0.6)
-  } 
+.card-body {
+  text-align: justify;
+}
 
-  .card{
-      margin: 40px auto;
-      box-sizing: border-box;
-      border-radius: 10px;
-      height: 500px; /
-  }
+.card-body_buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-  .card-title {
-      font-weight:700;
-      color: black!important;
-      text-align: center;
-  }
-
-  .card-body {
-      text-align: justify;
-  }
-
-  .card-body_buttons {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-  }
-
-  .card-body_btn {
-      border-radius: 0px;
-      background: #2e2c2c;
-      color:#f2ecec;
-  }
-
-  .list-group-item, .card-text {
-      color: #000000;
-  }
-
-  .badge-no-background {
-    background-color: transparent !important;
-    color: black !important; /* Asegúrate de que el texto siga siendo visible */
-    border: 1px solid black; /* Añade un borde negro */
-    border-radius: 5px; /* Ajusta el radio del borde según tus necesidades */
-    padding: 0.2em 0.5em; /* Añade un poco de padding para mejorar la apariencia */
+.card-body_btn {
+  border-radius: 0px;
+  background: #2e2c2c;
+  color: #f2ecec;
 }
 
 
-p .card-text{
+
+.card {
+  width: 100%;
+}
+
+span {
+  margin-top: 20px;
+}
+
+.card-body_buttons {
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text-center {
+  margin-top: 10px;
+}
+
+.card-body_buttons .btn {
+  width: 100%;
+}
+
+.btn-custom {
+  flex: 1 1 auto;
+  min-width: 150px;
+}
+
+.card-body_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body_buttons .btn {
+  flex: 1;
+  margin: 0 5px;
+}
+
+
+.list-group-item,
+.card-text {
+  color: #000000;
+}
+
+.badge-no-background {
+  background-color: transparent !important;
+  color: black !important;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+}
+
+p .card-text {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -232,32 +244,11 @@ p .card-text{
   margin-inline-end: 0px;
   unicode-bidi: isolate;
 }
-/* 
-
-.card-body_buttons {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  
-} */
-/* 
-.card-body_btn {
-  border-radius: 10px;
-} */
-
-.list-group-item,
-.card-text {
-  color: #000000;
-}
-
 
 img {
   width: 100%;
   height: 50%;
 }
-
-
-
 
 .no-decoration {
   text-decoration: none;
@@ -281,7 +272,6 @@ img {
   color: rgb(255, 255, 255);
 }
 
-
 a {
   text-decoration: none;
 }
@@ -291,14 +281,13 @@ a:focus {
   text-decoration: none;
 }
 
-#juego{
-  padding-top: 50px;
+#juego {
+  padding-top: 1px;
 }
 
-#juego-subtitulo{
-padding-bottom: 20px;
+#juego-subtitulo {
+  padding-bottom: 20px;
 }
-
 
 .game-area {
   position: relative;
@@ -310,7 +299,7 @@ padding-bottom: 20px;
   background-size: cover;
   border: 2px solid #000;
   overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(28, 27, 27, 0.5), 0px 0px 150px rgba(8, 55, 227, 0.5)
+  box-shadow: 0px 0px 10px rgba(28, 27, 27, 0.5), 0px 0px 150px rgba(8, 55, 227, 0.5);
 }
 
 .hole {
@@ -329,78 +318,128 @@ padding-bottom: 20px;
 }
 
 .btn-jumping {
-  
   font-size: 20px;
   font-weight: bold;
   padding: 15px 30px;
 }
-#puntuacion, #score{
-  color:#ffffff;
+
+#puntuacion,
+#score {
+  color: #ffffff;
+}
+
+#juego-subtitulo{
+
+  margin-top: 20px;
 }
 
 
-/*Media queries*/
+/* Media queries */
+@media screen and (min-width: 576px) {
+  .nav-link {
+    border-right: 1px solid rgb(248, 229, 229);
+  }
 
-
-
-
-
-/* chat */
-
-/* Responsive styles for cards */
-
-/* General styles */
-.card {
-  width: 100%;
-}
-
-@media (min-width: 576px) {
   .card {
     width: 48%;
   }
-}
 
-@media (min-width: 768px) {
-  .card {
-    width: 30%;
-  }
-}
-
-@media (min-width: 992px) {
-  .card {
-    width: 30%;
-  }
-}
-span{
-  margin-top: 20px;;
-}
-.card-body_buttons {
-  margin-top: 10px;
-  flex-direction: column;
-  gap: 15px;
-}
-.text-center{
-  margin-top: 10px;;
-}
-.card-body_buttons .btn {
-  width: 100%;
-}
-
-@media (min-width: 576px) {
   .card-body_buttons {
     flex-direction: row;
   }
 }
 
- .btn-custom {
-  flex: 1 1 auto;
-  min-width: 150px; /* Ajusta el tamaño mínimo según tus necesidades */
+@media (max-width: 768px) {
+  .texto-header {
+    margin-top: 3rem;
+  }
+
+  .card-body_btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    height: 650px;
+  }
 }
-.card-body_buttons {
-  display: flex;
-  justify-content: space-between;
+
+@media (min-width: 768px) {
+  h6 {
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+  footer a {
+    font-size: 45px;
+  }
 }
-.card-body_buttons .btn {
-  flex: 1;
-  margin: 0 5px;
+
+@media (min-width: 992px) {
+  h1 {
+    text-align: start;
+    padding: 8em 0em 0em 0em;
+  }
+
+  .card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1380px) {
+  #aboutMe .image-container {
+    display: flex;
+  }
+
+  #aboutMe .paragraph {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1379px) {
+  #aboutMe .image-container {
+    display: flex;
+  }
+
+  #aboutMe .paragraph {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 990px) {
+  #aboutMe .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+  }
+
+  #aboutMe .paragraph {
+    height: 200px; /* Ajusta la altura según sea necesario */
+    overflow-y: scroll;
+  }
+}
+
+
+@media (max-width: 1126px) {
+  .navbar-brand {
+      font-size: 19px;
+      margin-left: 12px; /* Ajusta el tamaño según tus necesidades */
+  }
+.toogler{
+  margin-right: 25px;
+ 
+}
+  ul.navbar-nav li.nav-item a.nav-link {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 19px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
 }
