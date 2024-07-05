@@ -27,7 +27,7 @@ body {
 /*header*/
 .hero-section {
   background-size: cover;
-  background-image: url("/assets/images/header3.jpg");
+  background-image: url("../images/header3.jpg"); /* Ruta relativa correcta */
   background-repeat: no-repeat;
   height: 100vh; /* Ajusta la altura según tu preferencia */
   background-position: center;
@@ -291,9 +291,9 @@ padding-bottom: 20px;
 }
 
 .mole {
-  width: 35px;
-  height: 35px;
-  background: url('/assets/images/conejito.jpeg') no-repeat center center;
+  width: 55px;
+  height: 55px;
+  background: url('./assets/images/conejito.png') no-repeat center center;
   background-size: cover;
   display: none;
   cursor: pointer;
