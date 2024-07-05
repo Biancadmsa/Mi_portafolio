@@ -1,0 +1,381 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: #050505;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+
+.navbar {
+  background-color: rgb(15, 22, 40);
+  opacity: 0.7;
+
+}
+
+.text-logo {
+  font-size: 30px;
+}
+
+.container-fluid {
+  padding-left: 50px;  /* Ajusta este valor según sea necesario */
+  padding-right: 50px; /* Ajusta este valor según sea necesario */
+}
+
+
+
+/*header*/
+.hero-section {
+  background-size: cover;
+  background-image: url("/assets/images/header3.jpg");
+  background-repeat: no-repeat;
+  height: 100vh; /* Ajusta la altura según tu preferencia */
+  background-position: center;
+  position: relative;
+}
+
+.texto-header {
+  margin-top: 3rem;
+  color: #f2ecec;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .texto-header {
+    margin-top: 3rem;
+  }
+}
+
+.welcomeText {
+  padding-top: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 60px;
+  text-shadow: 2px 2px 0px rgb(18, 76, 76), -2px -2px 0px aqua, 2px -2px 0px aqua, -2px 2px 0px aqua;
+  padding-top:460px;
+  padding-bottom: 0;
+}
+
+
+
+/*contenido-quien soy-*/
+/* 
+
+.titulo-presentacion {
+  color: #ffffff;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+
+h3 {
+  color: #d5cccc;
+  text-align: center;
+  font-size: 45px;
+
+}
+
+h4{
+  color:black;
+}
+
+ h5{
+  margin-top: 5px;
+  color: #000;
+ }
+
+
+h6 {
+  font-size: 25px;
+  color: #ffffff;
+}
+/* 
+card-title */
+
+ul.navbar-nav li.nav-item a.nav-link {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 30px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ul.navbar-nav li.nav-item a.nav-link:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 35px 35px rgba(2, 2, 66, 0.6);
+}
+
+
+.columna1,
+.columna2 {
+  margin-top: 30px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+
+/* footer */
+footer {
+  background-color: rgb(15, 22, 40);
+  opacity: 0.8;
+  margin-top: 100px;
+  width: 100%;
+}
+
+/* Íconos redes sociales */
+footer a {
+  margin-left: 15px;
+  font-size: 45px;
+  color: rgb(248, 229, 229);
+}
+
+footer a:hover {
+  color: rgb(176, 243, 221);
+}
+
+
+/* proyectos */
+
+
+/* seccion 3 (Proyectos) */
+
+.sectioncard {
+  background: rgba(16, 16, 16, 0.6);
+
+}
+/* 
+#myProjects {
+  border: 2px solid white;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(85, 17, 17, 0.5), 0px 0px 50px rgba(4, 6, 74, 0.5);
+
+} */
+
+
+.card {
+  margin: 40px auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  
+}
+
+
+.cardprincipal {
+  height: 500px;
+}
+
+
+.card-body {
+  max-height: auto;
+  background-color: #ebe3e3;
+  
+}
+
+.card-title {
+  font-weight: 700;
+  color: rgb(15, 22, 40)!important;
+  text-align: center;
+  font-size: 25px;
+}
+
+.card-sobre {
+  font-weight: 700;
+  color: rgb(255, 255, 255)!important;
+  text-align: center;
+  font-size: 45px;
+}
+
+
+.custom-background {
+  background-color:  rgba(28, 27, 27, 0.5);/* Cambia esto por el color de fondo que prefieras */
+  padding: 20px; /* Opcional: agrega padding para un mejor espaciado */
+  border-radius: 10px; /* Opcional: agrega bordes redondeados */
+}
+
+.card-body {
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.card-body_buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-body_btn {
+  border-radius: 10px;
+}
+
+.list-group-item,
+.card-text {
+  color: #000000;
+}
+
+
+img {
+  width: 100%;
+  height: 50%;
+}
+
+
+
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.no-decoration:hover,
+.no-decoration:focus {
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  color: #ffffff;
+  /* Color verde de WhatsApp */
+}
+
+.github-icon {
+  color: #ffffff;
+}
+
+.linkedin-icon {
+  color: rgb(255, 255, 255);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+#juego{
+  padding-top: 50px;
+}
+
+#juego-subtitulo{
+padding-bottom: 20px;
+}
+
+
+.game-area {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  margin: 20px auto;
+  background-color: #000;
+  background-size: cover;
+  border: 2px solid #000;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(28, 27, 27, 0.5), 0px 0px 150px rgba(8, 55, 227, 0.5)
+}
+
+.hole {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.mole {
+  width: 35px;
+  height: 35px;
+  background: url('/assets/images/conejito.jpeg') no-repeat center center;
+  background-size: cover;
+  display: none;
+  cursor: pointer;
+}
+
+.btn-jumping {
+  
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+#puntuacion, #score{
+  color:#ffffff;
+}
+
+
+/*Media queries*/
+
+@media (min-width: 576px) {
+  h1 {
+    text-align: start;
+    padding: 8em 0em 0em 0em;
+  }
+
+  nav {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+
+  .start_section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  section {
+    border-radius: 0.25em;
+  }
+
+  .section2 {
+    width: 70vw;
+    margin: auto;
+  }
+
+  .btnSaberMas {
+    width: 30vw;
+  }
+
+  .section3_container {
+    padding: 3em 0 !important;
+  }
+
+  .card {
+    padding: 0;
+    width: 40%;
+  }
+
+  .card-text,
+  .container_badges {
+    padding: 0 1.5em;
+  }
+
+  footer a {
+    margin-left: 25px;
+    font-size: 40px;
+    color: rgb(248, 229, 229);
+  }
+
+
+
+  .lastLink {
+    border-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section2 {
+    padding: 1em 6em !important;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  
+}
